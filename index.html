@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学术主页</title>
+    <title>Academic Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f0f0f5;
             color: #333;
         }
         .header {
-            background-color: #2c3e50;
+            background-color: #4a4a4a;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -26,7 +26,7 @@
         .nav {
             display: flex;
             justify-content: center;
-            background-color: #34495e;
+            background-color: #6a6a6a;
             padding: 10px;
         }
         .nav a {
@@ -47,18 +47,43 @@
             margin-bottom: 40px;
         }
         .section h2 {
-            border-bottom: 2px solid #2c3e50;
+            border-bottom: 2px solid #4a4a4a;
             padding-bottom: 10px;
-            color: #2c3e50;
+            color: #4a4a4a;
         }
         .footer {
-            background-color: #2c3e50;
+            background-color: #4a4a4a;
             color: white;
             text-align: center;
             padding: 20px 0;
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+        .about-container img {
+            max-width: 150px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .research-container {
+            display: flex;
+        }
+        .research-container .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .research-images {
+            display: flex;
+            flex-direction: column;
+        }
+        .research-images img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
         }
         .grid {
             display: grid;
@@ -77,66 +102,73 @@
         }
         .card h3 {
             margin: 10px 0;
-            color: #2c3e50;
+            color: #4a4a4a;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>欢迎来到我的学术主页</h1>
+        <h1>Yifei Zhang</h1>
     </div>
     <div class="nav">
-        <a href="#about">关于我</a>
-        <a href="#research">研究</a>
-        <a href="#publications">出版物</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系方式</a>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#Hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
     </div>
     <div class="container">
-        <div id="about" class="section">
-            <h2>关于我</h2>
-            <p>你好，我是[你的名字]，目前是一名学者，专注于人工智能和计算机科学领域的研究。</p>
+        <div id="about" class="section about-container">
+            <img src="selfie.jpg" alt="My Photo">
+            <div>
+                <h2>About Me</h2>
+                <p>Hi, I am Yifei Zhang, currently a student focused on research in the fields of psychology and cognitive science. <br><br>I am currently applying computational models and LLMs on decision-making and reasoning.<br><br>I took undergraduate courses in psychology at Beijing Normal University and MSc Cognitive and Decision Science at UCL. </p>
+            </div>
         </div>
-        <div id="research" class="section">
-            <h2>研究</h2>
-            <p>我的研究兴趣包括但不限于机器学习、深度学习、计算机视觉和自然语言处理。</p>
+        <div id="research" class="section research-container">
+            <div class="text">
+                <h2>Research</h2>
+                <p>My research interests are centered around modeling human decision-making and reasoning processes, particularly in the context of irrational decisions and learning under uncertainty. I focus on Bayesian modeling and reinforcement learning to develop more accurate models of our decision-making processes. With the astonishing LLMs, especially GPT-4o, I am keen to combine behavioral experiments with LLMs to identify key differences and similarities between human and AI.<br><br> I am familiar with Python and Matlab in experiment implementation and fitting models and I am experienced in fMRI, EEG and DL and RL algorithms. I am also familiar with R, JavaScript, JASP, Inquisit 4 and C.</p>				
+            </div>
+            <div class="research-images">
+                <img src="research_image1.png" style="width: 300px; height: 200px;" alt="Distribution Fitting in Previous Research">
+                <img src="research_image2.png" style="width: 300px; height: 200px;" alt="Model Fitting in Previous Research">
+            </div>
         </div>
         <div id="publications" class="section">
-            <h2>出版物</h2>
+            <h2>Publications</h2>
             <ul>
-                <li>论文1: <i>标题</i> - 出版年份</li>
-                <li>论文2: <i>标题</i> - 出版年份</li>
-                <li>论文3: <i>标题</i> - 出版年份</li>
+                <li>Zhang, Y., Li, J., Zhen, Zong., Liu, J. (in review). Causal inferences contribute to biased learning, predicted by Bayesian models and reinforcement models.</li>
+                <li>Zhang, Y., Pilditch, T. D., Lagnado, D. (under revision). Do error rate, evidence relation and social setting impact on the reasoning process of dependency by people and the Bayesian Network?</li>
+                <li>Zhang, Y., Li, J., Zhen, Zong., Liu, J. (2021). Causal inferences contribute to biased learning, predicted by a novel Bayesian model. In The 23rd National Academic Conference of Psychology. Hohhot, Inner Mongolia, China.</li>
+				<li>Zhang, Y., Sun, W., Chen, Y., Yang, C., Liu, J. (2021). Could AI lie? Introducing AI for conformity psychological research, based on the Asch conformity study. In The 23rd National Academic Conference of Psychology. Hohhot, Inner Mongolia, China.</li>
+				<li>Wang, W., Zhang, Y., Guo, Z., Bing, G., Li, Y., Zhou, S., Hu, X., Liu, J. (submitted) Developing the 21st-century university majors choosing decisions system for university students based on interests and competencies, using NLP and representational similarity analysis.</li>
             </ul>
         </div>
-        <div id="projects" class="section">
-            <h2>项目</h2>
+        <div id="Hobbies" class="section">
+            <h2>Hobbies</h2>
             <div class="grid">
-                <div class="card">
-                    <img src="project1.jpg" alt="项目1">
-                    <h3>项目名称1</h3>
-                    <p>项目描述1</p>
+                <div class="card" style="width: 200px; height: 160px;">
+                    <img src="piano.webp" style="width: 150px; height: 120px;" alt="Interest 1">
+                    <h3>Piano</h3>
                 </div>
-                <div class="card">
-                    <img src="project2.jpg" alt="项目2">
-                    <h3>项目名称2</h3>
-                    <p>项目描述2</p>
+                <div class="card" style="width: 200px; height: 160px;">
+                    <img src="poker.webp" style="width: 150px; height: 120px;" alt="Interest 2">
+                    <h3>Poker</h3>
                 </div>
-                <div class="card">
-                    <img src="project3.jpg" alt="项目3">
-                    <h3>项目名称3</h3>
-                    <p>项目描述3</p>
+                <div class="card" style="width: 200px; height: 160px;">
+                    <img src="basketball.jfif" style="width: 150px; height: 120px;" alt="Interest 3">
+                    <h3>Basketball</h3>
                 </div>
             </div>
         </div>
         <div id="contact" class="section">
-            <h2>联系方式</h2>
-            <p>邮箱: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:yifei-zhang.22@ucl.ac.uk">yifei-zhang.22@ucl.ac.uk</a></p>
         </div>
     </div>
     <div class="footer">
-        <p>&copy; 2024 [你的名字]. 保留所有权利.</p>
+        <p>&copy; 2024 YifeiZhang. All rights reserved.</p>
     </div>
 </body>
 </html>
