@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yifei Zhang | Cognitive Science and Psychology</title>
+    <meta
+      name="description"
+      content="Academic homepage of Yifei Zhang, focused on computational models of human learning, reasoning, and decision-making."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="site-name" href="#top">Yifei Zhang</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="profile wrap" aria-labelledby="profile-title">
+        <div class="profile-copy">
+          <p class="eyebrow">Cognitive Science and Psychology</p>
+          <h1 id="profile-title">Yifei Zhang</h1>
+          <p class="lead">
+            I study how people learn, reason, and make decisions under uncertainty, using
+            behavioral experiments, Bayesian modeling, reinforcement learning, and
+            LLMs.
+          </p>
+          <p>
+            My current work examines the alignment and divergence between human and
+            artificial intelligence, especially in dependency reasoning, causal inference,
+            and decision-making settings where evidence is incomplete or socially framed.
+          </p>
+          <div class="actions" aria-label="Profile links">
+            <a class="button primary" href="mailto:yifei-zhang.22@alumni.ucl.ac.uk">Email</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="assets/selfie5.jpg" alt="Portrait of Yifei Zhang">
+          <figcaption>Yifei Zhang</figcaption>
+        </figure>
+      </section>
+
+      <section id="education" class="section-band">
+        <div class="wrap section education-section" aria-labelledby="education-title">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2 id="education-title">Education</h2>
+          </div>
+          <div class="education-grid">
+            <article class="education-card">
+              <span class="date">2022-2023</span>
+              <h3>MSc Cognitive and Decision Science</h3>
+              <p>Division of Psychology and Language Sciences, University College London.</p>
+              <p>
+                Thesis on dependency reasoning process under the effect of error rates,
+                evidence relations and social settings with Bayesian Network comparison.
+              </p>
+            </article>
+            <article class="education-card">
+              <span class="date">2017-2021</span>
+              <h3>BSc Psychology</h3>
+              <p>Department of Psychology, Beijing Normal University.</p>
+              <p>
+                Thesis on causal attributions in biased learning, predicted by a Bayesian
+                model.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="wrap section" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Research</p>
+          <h2 id="research-title">Research</h2>
+        </div>
+        <div class="research-tabs" role="tablist" aria-label="Selected research projects">
+          <button class="research-tab is-active" type="button" data-research-target="dependency">
+            Dependency reasoning
+          </button>
+          <button class="research-tab" type="button" data-research-target="majors">
+            Major recategorization
+          </button>
+          <button class="research-tab" type="button" data-research-target="conformity">
+            AI liar conformity
+          </button>
+          <button class="research-tab" type="button" data-research-target="biased-learning">
+            Biased learning
+          </button>
+        </div>
+
+        <article class="research-item research-panel is-active" data-research-panel="dependency">
+          <div class="research-copy">
+            <p class="meta">Computational reasoning</p>
+            <h3>
+              Do error rate, evidence relation, and social setting impact dependency
+              reasoning by people and Bayesian Networks?
+            </h3>
+            <p>
+              This project compares human judgments with Bayesian Network predictions in
+              reasoning from dependent and independent information sources. The experiment
+              tested whether error rate, evidence relation, and social setting shape
+              probability updating in corroborative and contradictory evidence contexts.
+              Model comparison suggests that participants' information updating was
+              insufficient relative to Bayesian Network predictions.
+            </p>
+          </div>
+          <div class="research-media two-up">
+            <figure>
+              <img
+                src="assets/research_image1.png"
+                alt="Density plot comparing baseline error rate for correct and incorrect sources"
+              >
+            </figure>
+            <figure>
+              <img
+                src="assets/research_image2.png"
+                alt="Line charts of probability estimation by evidence relation and error rate"
+              >
+            </figure>
+          </div>
+        </article>
+
+        <article class="research-item research-panel" data-research-panel="majors">
+          <div class="research-copy">
+            <p class="meta">Representational analysis</p>
+            <h3>
+              Representational similarity analysis for recategorizing university majors in a
+              high-tech 21st-century context
+            </h3>
+            <p>
+              This work adapts representational similarity analysis to behavioral and
+              text-derived data. The project builds an NLP pipeline over a
+              300-million-word original corpus to quantify 21st-century competencies and
+              produce a more interpretable structure for university majors.
+            </p>
+          </div>
+          <div class="research-media">
+            <figure>
+              <img
+                src="assets/research_image3.png"
+                alt="Representational similarity matrix for university majors"
+              >
+            </figure>
+          </div>
+        </article>
+
+        <article class="research-item research-panel" data-research-panel="conformity">
+          <div class="research-copy">
+            <p class="meta">Social cognition and AI</p>
+            <h3>
+              The conformity of a Chinese new generation born in the AI era under the
+              setting of an artificial intelligence "liar"
+            </h3>
+            <p>
+              This project adapts the Asch conformity paradigm to test whether individuals
+              conform to judgments made by an AI agent. The study asks how trust,
+              disagreement, and social pressure shift when the confederate is artificial
+              rather than human.
+            </p>
+          </div>
+          <div class="research-media">
+            <figure>
+              <img
+                src="assets/research_image4.png"
+                alt="Line chart showing conformity-related measurements across sixteen conditions"
+              >
+            </figure>
+          </div>
+        </article>
+
+        <article class="research-item research-panel" data-research-panel="biased-learning">
+          <div class="research-copy">
+            <p class="meta">Causal learning</p>
+            <h3>
+              Causal inferences contribute to biased learning, predicted by a novel Bayesian
+              model
+            </h3>
+            <p>
+              This project investigates people's causal inference process during biased
+              learning with Bayesian models and reinforcement learning models. The work
+              applies Bayesian modeling to describe and predict biased learning in
+              sequential decision settings.
+            </p>
+          </div>
+          <div class="research-media">
+            <figure>
+              <img
+                src="assets/research_image5.png"
+                alt="Bar chart comparing model or condition measurements for biased learning"
+              >
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="publications" class="section-band">
+        <div class="wrap section" aria-labelledby="publications-title">
+          <div class="section-heading">
+            <p class="eyebrow">Writing and Posters</p>
+            <h2 id="publications-title">Publications & Conference Posters</h2>
+          </div>
+          <ol class="publication-list">
+            <li>
+              <span class="paper-title">
+                Causal inferences contribute to biased learning, predicted by Bayesian
+                models and reinforcement models.
+              </span>
+              <span>Zhang, Y., Li, J., Zhen, Z., Liu, J. In progress.</span>
+            </li>
+            <li>
+              <span class="paper-title">
+                Do error rate, evidence relation and social setting impact on the reasoning
+                process of dependency by people and the Bayesian Network?
+              </span>
+              <span>Zhang, Y., Pilditch, T. D., Lagnado, D. In progress.</span>
+            </li>
+            <li>
+              <span class="paper-title">
+                Causal inferences contribute to biased learning, predicted by a novel
+                Bayesian model.
+              </span>
+              <span>
+                Zhang, Y., Li, J., Zhen, Z., Liu, J. The 23rd National Academic Conference
+                of Psychology, Hohhot, China, 2021.
+              </span>
+            </li>
+            <li>
+              <span class="paper-title">
+                Could AI lie? Introducing AI for conformity psychological research, based on
+                the Asch conformity study.
+              </span>
+              <span>
+                Zhang, Y., Sun, W., Chen, Y., Yang, C., Liu, J. The 23rd National Academic
+                Conference of Psychology, Hohhot, China, 2021.
+              </span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="experience" class="wrap section" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Research Assistant & Teaching Assistant Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-entry">
+            <span class="date">2021-2022</span>
+            <div>
+              <h3>Research Assistant</h3>
+              <p>
+                LiuLab, Tsinghua Laboratory of Brain and Intelligence. Worked on Bayesian
+                cognitive modeling, neural-network approaches to human reasoning and
+                representational analysis for decision systems.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <span class="date">2022</span>
+            <div>
+              <h3>Teaching Assistant, Neuromatch Academy Deep Learning</h3>
+              <p>
+                Gave lectures, answered course questions, mentored and coordinated student
+                research projects. Certificate of Excellence.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="wrap section methods-grid" aria-label="Technical skills">
+          <div>
+            <h2>Methods</h2>
+            <p>
+              Behavioral experiment design, Bayesian inference, reinforcement learning,
+              model fitting and comparison, maximum likelihood estimation, structural
+              equation modeling, representational similarity analysis, LoRA, Adapter
+              tuning.
+            </p>
+          </div>
+          <div>
+            <h2>Tools</h2>
+            <p>
+              Python, MATLAB, R, JavaScript, LaTeX, PsychToolbox3, PsychoPy, jsPsych,
+              PyTorch, TensorFlow, SPSS, Inquisit, Adobe Creative Suite.
+            </p>
+          </div>
+          <div>
+            <h2>Lab Training</h2>
+            <p>
+              Psychophysics, EEG, fMRI, eye tracking, and behavioral experiments, with
+              emphasis on designing tasks that connect experimental logic to computational
+              models.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="section-band">
+        <div class="wrap section hobbies" aria-labelledby="hobbies-title">
+          <div class="section-heading">
+            <p class="eyebrow">Outside Research</p>
+            <h2 id="hobbies-title">Hobbies</h2>
+          </div>
+          <p class="hobby-copy">
+            During my free time, I enjoy playing the piano, basketball, ping pong, poker,
+            and board games.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="wrap section contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Get in touch</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:yifei-zhang.22@alumni.ucl.ac.uk">yifei-zhang.22@alumni.ucl.ac.uk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <span>Yifei Zhang</span>
+        <span>Cognitive Science and Psychology</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
